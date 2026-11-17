@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugins>
-  <pyqgis_plugin name="Norte Agro - Uso do Solo" version="0.7.4">
-    <description><![CDATA[Criação e padronização de camadas, reconhecimento de nomes, cálculo de áreas, Excel e espelho KML para uso do solo.]]></description>
-    <about><![CDATA[Gerencia camadas SHP de uso do solo, estilos QML, memória por projeto, catálogo guardado no próprio plugin, camadas personalizadas, substituição com backup, cálculo de áreas, relatório Excel e espelho KML.]]></about>
-    <version>0.7.4</version>
+  <pyqgis_plugin name="Norte Agro - Uso do Solo" version="0.7.5">
+    <description><![CDATA[Land use mapping for rural properties in Brazil (CAR/SICAR): standard layers, area table (Excel) and KML. / Uso do solo para o CAR: camadas padronizadas, Quadro de Áreas e KML.]]></description>
+    <about><![CDATA[Norte Agro Projetos plugin for land use mapping of rural properties in Brazil (Rural Environmental Registry - CAR/SICAR). It creates and standardizes land use layers (Shapefile + QML styles) from an office catalog, recognizes layer names, checks and fixes overlaps and gaps, computes the area table (Excel) and a KML mirror, and loads SEMAD/SIGA (Goiás) reference layers. The user interface is in Brazilian Portuguese. Help videos are downloaded from the Norte Agro GitHub repository when internet is available. | Plugin da Norte Agro Projetos para o uso do solo de imóveis rurais (CAR/SICAR): cria e padroniza camadas, reconhece nomes, confere e corrige sobreposições, calcula o Quadro de Áreas (Excel) e o espelho KML e carrega as camadas da SEMAD (SIGA). Os vídeos da Ajuda são baixados do GitHub da Norte Agro quando há internet.]]></about>
+    <version>0.7.5</version>
     <trusted>True</trusted>
     <qgis_minimum_version>3.22</qgis_minimum_version>
     <qgis_maximum_version>4.99</qgis_maximum_version>
-    <homepage>https://github.com/lipe83555-cyber/norteagro-plugins-qgis</homepage>
-    <file_name>norteagro_uso_solo.0.7.4.zip</file_name>
+    <homepage>https://github.com/lipe83555-cyber/norteagro-plugins-qgis-codigo</homepage>
+    <file_name>norteagro_uso_solo.0.7.5.zip</file_name>
     <icon>https://raw.githubusercontent.com/lipe83555-cyber/norteagro-plugins-qgis/main/icones/norteagro_uso_solo.png</icon>
-    <author_name><![CDATA[Norte Agro]]></author_name>
-    <download_url>https://raw.githubusercontent.com/lipe83555-cyber/norteagro-plugins-qgis/main/zips/norteagro_uso_solo.0.7.4.zip</download_url>
-    <uploaded_by><![CDATA[Norte Agro]]></uploaded_by>
-    <create_date>2026-11-17T02:06:24.000000+00:00</create_date>
-    <update_date>2026-11-17T02:06:24.000000+00:00</update_date>
+    <author_name><![CDATA[Norte Agro Projetos]]></author_name>
+    <download_url>https://raw.githubusercontent.com/lipe83555-cyber/norteagro-plugins-qgis/main/zips/norteagro_uso_solo.0.7.5.zip</download_url>
+    <uploaded_by><![CDATA[Norte Agro Projetos]]></uploaded_by>
+    <create_date>2026-11-17T02:18:00.000000+00:00</create_date>
+    <update_date>2026-11-17T02:18:00.000000+00:00</update_date>
     <experimental>False</experimental>
     <deprecated>False</deprecated>
-    <tracker></tracker>
-    <repository></repository>
-    <tags><![CDATA[]]></tags>
+    <tracker>https://github.com/lipe83555-cyber/norteagro-plugins-qgis-codigo/issues</tracker>
+    <repository>https://github.com/lipe83555-cyber/norteagro-plugins-qgis-codigo</repository>
+    <tags><![CDATA[norte agro,CAR,SICAR,land use,uso do solo,area,quadro de areas,kml,excel,brazil,goias]]></tags>
     <downloads>0</downloads>
     <average_vote>0</average_vote>
     <rating_votes>0</rating_votes>
     <external_dependencies></external_dependencies>
     <server>False</server>
   </pyqgis_plugin>
-  <pyqgis_plugin name="NorteAgro Layout de plantas" version="0.32.4">
-    <description><![CDATA[Gera a Planta de Uso do Solo e a Planta de Passivos da Norte Agro a partir de modelos, lendo a planilha de áreas e os documentos do imóvel.]]></description>
-    <about><![CDATA[Escolha o modelo, leia o recibo do CAR e a matrícula (PDF), escolha a planilha do Quadro de Áreas do plugin "Norte Agro - Uso do Solo" e gere a planta com legenda, quadros, norte, escala, localização e responsável técnico. O município é achado sozinho pela área do imóvel. Cada mapa tem camadas, SRC e enquadramento próprios. Textos variáveis usam variáveis de projeto (@na_*). Uso interno da Norte Agro Projetos.]]></about>
-    <version>0.32.4</version>
+  <pyqgis_plugin name="Norte Agro - Layout de plantas" version="0.32.5">
+    <description><![CDATA[Land use and environmental liabilities map layouts for rural properties in Brazil (CAR): legend, area tables, north arrow, scale and location map. / Plantas de Uso do Solo e de Passivos para o CAR.]]></description>
+    <about><![CDATA[Norte Agro Projetos plugin that builds the Land Use map and the Environmental Liabilities map of a rural property in Brazil (CAR) from templates: it reads the CAR receipt and the property registry PDF locally, uses the area table produced by the "Norte Agro - Uso do Solo" plugin and generates the layout with legend, area tables, north arrow, scale, municipality location and the technical manager block (filled in Settings). Each map has its own layers, CRS and extent; variable texts use project variables (@na_*). Optional OCR for scanned documents uses a separate Python environment that the user installs (support folder). The user interface is in Brazilian Portuguese. | Plugin da Norte Agro Projetos que gera a Planta de Uso do Solo e a Planta de Passivos do imóvel a partir de modelos, lendo o recibo do CAR, a matrícula e o Quadro de Áreas do plugin "Norte Agro - Uso do Solo". O responsável técnico é preenchido em Configurações.]]></about>
+    <version>0.32.5</version>
     <trusted>True</trusted>
     <qgis_minimum_version>3.22</qgis_minimum_version>
     <qgis_maximum_version>4.99</qgis_maximum_version>
-    <homepage>https://github.com/lipe83555-cyber/norteagro-plugins-qgis</homepage>
-    <file_name>norteagro_layout_ia.0.32.4.zip</file_name>
+    <homepage>https://github.com/lipe83555-cyber/norteagro-plugins-qgis-codigo</homepage>
+    <file_name>norteagro_layout_ia.0.32.5.zip</file_name>
     <icon>https://raw.githubusercontent.com/lipe83555-cyber/norteagro-plugins-qgis/main/icones/norteagro_layout_ia.png</icon>
     <author_name><![CDATA[Norte Agro Projetos]]></author_name>
-    <download_url>https://raw.githubusercontent.com/lipe83555-cyber/norteagro-plugins-qgis/main/zips/norteagro_layout_ia.0.32.4.zip</download_url>
+    <download_url>https://raw.githubusercontent.com/lipe83555-cyber/norteagro-plugins-qgis/main/zips/norteagro_layout_ia.0.32.5.zip</download_url>
     <uploaded_by><![CDATA[Norte Agro Projetos]]></uploaded_by>
-    <create_date>2026-11-17T02:06:24.000000+00:00</create_date>
-    <update_date>2026-11-17T02:06:24.000000+00:00</update_date>
+    <create_date>2026-11-17T02:18:00.000000+00:00</create_date>
+    <update_date>2026-11-17T02:18:00.000000+00:00</update_date>
     <experimental>False</experimental>
     <deprecated>False</deprecated>
-    <tracker></tracker>
-    <repository></repository>
-    <tags><![CDATA[layout,planta,uso do solo,passivos,CAR,qpt]]></tags>
+    <tracker>https://github.com/lipe83555-cyber/norteagro-plugins-qgis-codigo/issues</tracker>
+    <repository>https://github.com/lipe83555-cyber/norteagro-plugins-qgis-codigo</repository>
+    <tags><![CDATA[norte agro,CAR,layout,planta,map,land use,uso do solo,passivos,qpt,brazil]]></tags>
     <downloads>0</downloads>
     <average_vote>0</average_vote>
     <rating_votes>0</rating_votes>
